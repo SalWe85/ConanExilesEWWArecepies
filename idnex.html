@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conan Exiles EWWA recepies</title>
+</head>
+<body>
+<div id="main_div">
+    <div id="title_div">
+    <h1 class="shadow">Conan Exiles EWWA recepies</h1>
+    </div>
+    <div id="top_div" class="shadow">
+        <p id="a1" class="article">Star Obsidian</p>
+        <p id="a2" class="article">Scourgesteel</p>
+        <p id="a3" class="article">Composite Jade</p>
+        <p id="a4" class="article">Hallowed Bones</p>
+        <p id="a5" class="article">Essence of a Star</p>
+        <p id="a6" class="article">Oblivion Steel</p>
+        <p id="a7" class="article">Cosmic Steel</p>
+    </div>
+    <div id="bottom_div">
+        <p id="text"></p>
+    </div>
+</div>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: wheat;
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            height: 100vh;
+            background-image: url("https://images7.alphacoders.com/815/thumb-1920-815765.jpg");
+            background-size: cover;
+        }
+        #title_div {
+            width: 500px;
+            height: 2rem;
+            border-bottom: 1px solid wheat;
+            display: block;
+            text-align: center;
+        }
+        #main_div {
+            display: block;
+        }
+        #top_div {
+            width: 500px;
+            height: 100px;
+            padding-top: 20px;
+            display: grid;
+            grid-column: auto auto auto auto;
+            grid-row: auto auto;
+
+        }
+        .shadow {
+            text-shadow: 1px 1px black;
+        }
+        p {
+           cursor: pointer;
+           }
+        #bottom_div {
+            width: 500px;
+            height: 300px;
+            border: 1px solid wheat;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            border-radius: 7px 70px;
+            color: black;
+            box-shadow: 5px 5px 5px 0 black;
+            background-image: url("https://img.freepik.com/free-photo/old-paper-texture-vintage-paper-background_262663-432.jpg?size=626&ext=jpg");
+
+        }
+        .article {
+            margin-top: -2px;
+            font-size: 14px;
+            font-weight: bold;
+            }
+        .article:hover {
+            color: black;
+            text-shadow: none;
+        }
+        .article:active {
+            color: white;
+            text-shadow: none;
+        }
+        #a2 {
+            grid-column: 2;
+        }
+        #a3 {
+            grid-column: 3;
+        }
+        #a4 {
+            grid-column: 4;
+        }
+        #a5 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        #a6 {
+            grid-column: 2;
+            grid-row: 2;
+        }
+        #a7 {
+            grid-column: 3;
+            grid-row: 2;
+        }
+        
+    </style>
+    <script>
+       const art1 = document.getElementById(`a1`);
+       art1.addEventListener(`click`, function(){document.getElementById(`text`).innerHTML= `<h1> Star Obsidian </h1><br>
+        Nether Furnace:<br><br>
+        3 Star Metal Bars<br> 
+        5 Composite Obsidian<br>
+        6 Oil<br>
+        8 Corrupted Stone`});
+       const art2 = document.getElementById(`a2`);
+       art2.addEventListener(`click`, function(){document.getElementById(`text`).innerHTML= `<h1> Scourgesteel </h1><br>
+        5 Scourge Powder <br>
+        8 Hardened Steel <br>
+        1 Oil of Fragmented Power<br>
+        2 Star Obsidian Bars`});
+        const art3 = document.getElementById(`a3`);
+       art3.addEventListener(`click`, function(){document.getElementById(`text`).innerHTML= `<h1> Composite Jade </h1><br>
+        4 Jade Ore <br>
+        1 Alchemical Fluid <br>
+        2 Oil of Fragmented Power <br>
+        8 Scourgepowder `});
+        const art4 = document.getElementById(`a4`);
+       art4.addEventListener(`click`, function(){document.getElementById(`text`).innerHTML= `<h1> Hallowed Bones </h1><br>
+        10 Corrupted Bones <br>
+        5 Dragonbone <br>
+        25 Ivory <br>
+        1 Oil of Fragmented Power `});
+        const art5 = document.getElementById(`a5`);
+       art5.addEventListener(`click`, function(){document.getElementById(`text`).innerHTML= `<h1> Essence of a Star </h1><br>
+        18 Star Metal Ore <br>
+        5 Scourge Powder <br>`});
+        const art6 = document.getElementById(`a6`);
+       art6.addEventListener(`click`, function(){document.getElementById(`text`).innerHTML= `<h1> Oblivion Steel </h1><br>
+        3 Alchemical Fluid <br>
+        12 Oblivion Ore <br>
+        4 Scourgesteel <br>
+        3 Oil of Fragmented Power`});
+        const art7 = document.getElementById(`a7`);
+       art7.addEventListener(`click`, function(){document.getElementById(`text`).innerHTML= `<h1> Cosmic Steel </h1><br>
+        1 God Krystallion <br>
+        12 Oblivion Steel `});
+        
+    </script>
+</body>
+</html>
