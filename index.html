@@ -36,18 +36,21 @@
             background-image: url("https://images7.alphacoders.com/815/thumb-1920-815765.jpg");
             background-size: cover;
         }
+        #main_div {
+            display: block;
+            width: 500px;
+
+        }
         #title_div {
-            width: 35rem;
+            width: 100%;
             height: 2rem;
             border-bottom: 1px solid wheat;
             display: block;
             text-align: center;
         }
-        #main_div {
-            display: block;
-        }
+        
         #top_div {
-            width: 35rem;
+            width: 100%;
             height: 5rem;
             padding-top: 20px;
             display: grid;
@@ -62,7 +65,7 @@
            cursor: pointer;
            }
         #bottom_div {
-            width: 35rem;
+            width: 100%;
             height: 18rem;
             border: 1px solid wheat;
             display: flex;
@@ -107,6 +110,11 @@
         #a7 {
             grid-column: 3;
             grid-row: 2;
+        }
+        @media only screen and (max-width: 768px) {
+        #main_div {
+            width: 90%;
+        }
         }
         
     </style>
